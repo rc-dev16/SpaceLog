@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Missions CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Space Missions Tracker</h1>
+
+    <div class="form-container">
+      <input type="text" id="missionName" placeholder="Mission Name" />
+      <input type="text" id="agency" placeholder="Agency" />
+      <input type="text" id="destination" placeholder="Destination" />
+      <input type="number" id="launchYear" placeholder="Launch Year" />
+    </div>
+
+    <div class="main-button-container">
+      <button id="submitBtn">Add Mission</button>
+    </div>
+
+    <div class="search-sort-container">
+      <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Search by Mission Name or Year" />
+      </div>
+      <div class="sort-section">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="missionName">Mission Name</option>
+          <option value="agency">Agency</option>
+          <option value="destination">Destination</option>
+          <option value="launchYear">Launch Year</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table id="missionTable">
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Agency</th>
+            <th>Destination</th>
+            <th>Launch Year</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Mission rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>
