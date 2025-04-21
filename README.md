@@ -5,7 +5,7 @@ SpaceLog is a modern frontend web application designed to manage space missions 
 ## Features
 
 - **CRUD Operations**: Add, update, delete, and view space missions.
-- **Sorting**: Sort missions by various parameters such as mission name, launch date, etc.
+- **Sorting**: Sort missions by various parameters such as mission name, launch year, etc.
 - **Searching**: Easily search for specific missions.
 - **Night Mode UI**: A modern dark theme for better user experience.
 
